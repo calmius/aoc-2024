@@ -57,9 +57,6 @@ func totalDistance(firstCol []int, secondCol []int) int {
 func similarityScore(firstCol []int, secondCol []int) int {
 	htable := make(map[int]int)
 	var score int
-	for _, v := range firstCol {
-		htable[v] = 0
-	}
 
 	for i, v := range firstCol {
 		for i1, _ := range secondCol {
